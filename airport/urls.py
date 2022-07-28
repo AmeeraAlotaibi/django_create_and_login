@@ -38,4 +38,5 @@ urlpatterns = [
     ),
     path("register/", views.UserRegisterationView.as_view()),
     path("login/", views.UserLoginView.as_view()),
+    path("book-flight/<int:flight_id>/", views.CreateBookingView.as_view()),
 ]
